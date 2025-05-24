@@ -1,6 +1,6 @@
 # GreekUp
 
-**GreekUp** là một ứng dụng web xây dựng với React, TypeScript, Vite, Tailwind CSS. Ứng dụng hiển thị danh sách Albums, Users và chi tiết các mục này thông qua API JSONPlaceholder.
+**GreekUp** là một ứng dụng web xây dựng với React, TypeScript, Vite, Tailwind CSS. Ứng dụng hiển thị danh sách Albums, Users và chi tiết các mục này thông qua API JSONPlaceholder. Website được xây dựng với mục đích phục vụ nhu cầu kiểm tra kĩ năng của công ty GreekUp
 
 ## Demo
 
