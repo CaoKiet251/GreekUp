@@ -11,7 +11,15 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
   const { pathname } = useLocation();
-  const [isOpenText, setIsOpenText] = React.useState(true);
+  const [isOpenText, setIsOpenText] = React.useState(() => {
+  const stored = localStorage.getItem("sidebarTextState");
+    return stored ? JSON.parse(stored) : true;
+  });
+
+  React.useEffect(() => {
+    localStorage.setItem("sidebarTextState", JSON.stringify(isOpenText));
+  }, [isOpenText]);
+
 
   const menuItems = [
     { label: "Albums", icon: faListAlt, to: "/albums" },
